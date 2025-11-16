@@ -1,11 +1,11 @@
 // --- DATABASE ---
 const eventsData = [
-  { id: 1, city: 'Mumbai', name: 'Mumbai Mayhem', date: '2025-10-25', category: 'solo', price: 120, venue: 'Jio World Centre', image: 'https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=600&h=400' },
-  { id: 2, city: 'Delhi', name: 'Capital Punishment', date: '2025-11-15', category: 'team', price: 220, venue: 'JLN Stadium', image: 'https://images.pexels.com/photos/3757374/pexels-photo-3757374.jpeg?auto=compress&cs=tinysrgb&w=600&h=400' },
-  { id: 3, city: 'Bangalore', name: 'Silicon Valley Slam', date: '2025-12-06', category: 'elite', price: 150, venue: 'Kanteerava Stadium', image: 'https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=600&h=400' },
-  { id: 4, city: 'Pune', name: 'Deccan Dominance', date: '2026-01-17', category: 'solo', price: 120, venue: 'Balewadi Stadium', image: 'https://images.pexels.com/photos/3253501/pexels-photo-3253501.jpeg?auto=compress&cs=tinysrgb&w=600&h=400' },
-  { id: 5, city: 'Hyderabad', name: 'Nizam\'s Challenge', date: '2026-02-07', category: 'team', price: 220, venue: 'Gachibowli Stadium', image: 'https://images.pexels.com/photos/4162451/pexels-photo-4162451.jpeg?auto=compress&cs=tinysrgb&w=600&h=400' },
-  { id: 6, city: 'Mumbai', name: 'Mumbai Mayhem II', date: '2026-03-21', category: 'elite', price: 150, venue: 'Jio World Centre', image: 'https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=600&h=400' },
+  { id: 1, city: 'Mumbai', name: 'Mumbai Mayhem', date: '2025-10-25', category: 'solo', price: 1500, venue: 'Jio World Centre', image: 'https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=600&h=400' },
+  { id: 2, city: 'Delhi', name: 'Capital Punishment', date: '2025-11-15', category: 'team', price: 2000, venue: 'JLN Stadium', image: 'https://images.pexels.com/photos/3757374/pexels-photo-3757374.jpeg?auto=compress&cs=tinysrgb&w=600&h=400' },
+  { id: 3, city: 'Bangalore', name: 'Silicon Valley Slam', date: '2025-12-06', category: 'elite', price: 3000, venue: 'Kanteerava Stadium', image: 'https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=600&h=400' },
+  { id: 4, city: 'Pune', name: 'Deccan Dominance', date: '2026-01-17', category: 'solo', price: 1500, venue: 'Balewadi Stadium', image: 'https://images.pexels.com/photos/3253501/pexels-photo-3253501.jpeg?auto=compress&cs=tinysrgb&w=600&h=400' },
+  { id: 5, city: 'Hyderabad', name: 'Nizam\'s Challenge', date: '2026-02-07', category: 'team', price: 2000, venue: 'Gachibowli Stadium', image: 'https://images.pexels.com/photos/4162451/pexels-photo-4162451.jpeg?auto=compress&cs=tinysrgb&w=600&h=400' },
+  { id: 6, city: 'Mumbai', name: 'Mumbai Mayhem II', date: '2026-03-21', category: 'elite', price: 3000, venue: 'Jio World Centre', image: 'https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=600&h=400' },
 ];
 
 const pastEventsData = [
@@ -43,7 +43,6 @@ const pastEventsData = [
 ];
 
 const faqs = [
-  { q: "What is the FYTRR race format?", a: "The format is 8 x 1km runs. After each 1km run, you complete one functional workout station. This repeats 8 times." },
   { q: "Can I register as a team?", a: "Yes! We have team divisions for pairs. You run together and complete the workouts together, splitting the reps as you see fit." },
   { q: "What is the minimum age to participate?", a: "The minimum age to participate in a FYTRR event is 16 years old on the day of the event." },
   { q: "What should I bring on race day?", a: "Bring your ID, a water bottle, and appropriate athletic attire. We will provide a bag drop area for your other belongings." },
@@ -388,7 +387,7 @@ function populateEvents() {
                         <h3 class="text-2xl font-bold text-white mt-1">${event.name}</h3>
                         <p class="text-gray-400 mt-1">${event.venue}</p>
                         <div class="mt-4 flex justify-between items-center">
-                            <span class="text-lg font-bold text-white">$${event.price}</span>
+                            <span class="text-lg font-bold text-white">₹${event.price}</span>
                             <button onclick="showRegistrationModal(${event.id})" class="bg-orange-500 text-white font-semibold py-2 px-4 rounded-lg text-sm cta-button">Register</button>
                         </div>
                     </div>
