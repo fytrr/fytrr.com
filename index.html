@@ -64,43 +64,44 @@
 
           <div class="hidden md:flex items-center space-x-8">
             <a
-              href="#events"
-              class="nav-link font-semibold text-gray-300 hover:text-white"
-              onclick="showPage('events')"
-              >Events</a
-            >
-            <a
-              href="#schedule"
-              class="nav-link font-semibold text-gray-300 hover:text-white"
-              onclick="showPage('schedule')"
-              >Schedule</a
-            >
-            <a
-              href="#results"
-              class="nav-link font-semibold text-gray-300 hover:text-white"
-              onclick="showPage('results')"
-              >Past Events</a
-            >
-            <a
               href="#about"
-              class="nav-link font-semibold text-gray-300 hover:text-white"
+              class="nav-link font-semibold text-white hover:text-orange-500"
               onclick="showPage('about')"
-              >About</a
+              >ABOUT</a
             >
             <a
-              href="#sponsors"
-              class="nav-link font-semibold text-gray-300 hover:text-white"
-              onclick="showPage('sponsors')"
-              >Sponsors</a
+              href="#past-event"
+              class="nav-link font-semibold text-white hover:text-orange-500"
+              onclick="showPage('past-event')"
+              >PAST EVENT</a
+            >
+            <a
+              href="#race-format"
+              class="nav-link font-semibold text-white hover:text-orange-500"
+              onclick="showPage('race-format')"
+              >RACE FORMAT</a
+            >
+            <a
+              href="#join-us"
+              class="nav-link font-semibold text-white hover:text-orange-500"
+              onclick="showPage('join-us')"
+              >JOIN US</a
             >
           </div>
+
           <div class="flex items-center space-x-4">
             <a
               href="#"
-              class="hidden md:inline-block bg-orange-500 text-white font-bold py-2 px-6 rounded-lg cta-button"
-              onclick="showRegistrationModal()"
-              >Register Now</a
+              class="hidden md:inline-block border border-white text-white font-bold py-2 px-4 rounded-lg cta-button"
             >
+              SHOP
+            </a>
+            <a
+              href="#events"
+              class="hidden md:inline-block bg-orange-500 text-white font-bold py-2 px-4 rounded-lg cta-button"
+            >
+              ALL EVENTS
+            </a>
             <button id="mobile-menu-button" class="md:hidden text-white">
               <i data-lucide="menu"></i>
             </button>
@@ -109,42 +110,43 @@
       </div>
       <div id="mobile-menu" class="hidden md:hidden bg-black/90">
         <a
-          href="#events"
-          class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-800"
-          onclick="showPage('events')"
-          >Events</a
-        >
-        <a
-          href="#schedule"
-          class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-800"
-          onclick="showPage('schedule')"
-          >Schedule</a
-        >
-        <a
-          href="#results"
-          class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-800"
-          onclick="showPage('results')"
-          >Past Events</a
-        >
-        <a
           href="#about"
           class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-800"
           onclick="showPage('about')"
-          >About</a
+          >ABOUT</a
         >
         <a
-          href="#sponsors"
+          href="#past-event"
           class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-800"
-          onclick="showPage('sponsors')"
-          >Sponsors</a
+          onclick="showPage('past-event')"
+          >PAST EVENT</a
         >
-        <div class="p-4">
+        <a
+          href="#race-format"
+          class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-800"
+          onclick="showPage('race-format')"
+          >RACE FORMAT</a
+        >
+        <a
+          href="#join-us"
+          class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-800"
+          onclick="showPage('join-us')"
+          >JOIN US</a
+        >
+
+        <div class="p-4 flex justify-between space-x-2">
           <a
             href="#"
-            class="w-full text-center bg-orange-500 text-white font-bold py-2 px-6 rounded-lg cta-button"
-            onclick="showRegistrationModal()"
-            >Register Now</a
+            class="flex-1 text-center border border-white text-white font-bold py-2 rounded-lg cta-button"
           >
+            SHOP
+          </a>
+          <a
+            href="#events"
+            class="flex-1 text-center bg-orange-500 text-white font-bold py-2 rounded-lg cta-button"
+          >
+            ALL EVENTS
+          </a>
         </div>
       </div>
     </header>
@@ -165,16 +167,16 @@
             </p>
             <div class="flex justify-center items-center space-x-4">
               <a
-                href="#events"
+                href="#schedule"
                 onclick="showPage('events')"
                 class="bg-orange-500 text-white font-bold py-3 px-8 rounded-lg text-lg cta-button"
-                >Find an Event</a
+                >BOOK NOW</a
               >
               <a
                 href="#about"
                 onclick="showPage('about')"
                 class="bg-gray-700/50 backdrop-blur-sm text-white font-bold py-3 px-8 rounded-lg text-lg cta-button"
-                >Learn More</a
+                >TRAIN WITH US</a
               >
             </div>
           </div>
@@ -265,13 +267,18 @@
               class="flex flex-col md:flex-row items-center justify-center gap-8 text-center"
             >
               <div class="flex-1">
-                <h3 class="text-5xl font-black text-orange-400">8KM</h3>
+                <h3 class="text-5xl font-black text-orange-400">4KM</h3>
                 <p class="text-xl text-gray-300">Total Running</p>
               </div>
               <div class="text-5xl font-black text-gray-500">+</div>
               <div class="flex-1">
-                <h3 class="text-5xl font-black text-orange-400">8</h3>
+                <h3 class="text-5xl font-black text-orange-400">9</h3>
                 <p class="text-xl text-gray-300">Functional Workouts</p>
+              </div>
+              <div class="text-5xl font-black text-gray-500">+</div>
+              <div class="flex-1">
+                <h3 class="text-5xl font-black text-orange-400">3</h3>
+                <p class="text-xl text-gray-300">Zones</p>
               </div>
               <div class="text-5xl font-black text-gray-500">=</div>
               <div class="flex-1">
@@ -279,7 +286,7 @@
                   data-lucide="shield-check"
                   class="w-20 h-20 text-green-400 mx-auto"
                 ></i>
-                <p class="text-xl text-gray-300 mt-2">Your Finisher Medal</p>
+                <p class="text-xl text-gray-300 mt-2">Your Finisher Medal + Lots of Memories</p>
               </div>
             </div>
           </div>
@@ -592,6 +599,101 @@
         </div>
       </section>
 
+      <section
+        id="race-format"
+        data-page="race-format"
+        class="bg-black py-16 text-white"
+      >
+        <div class="carousel-container relative w-full h-72 rounded-lg">
+          <div class="carousel-track h-full">
+            <div class="carousel-slide h-full">
+              <img
+                src="https://images.pexels.com/photos/2261477/pexels-photo-2261477.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex items-center justify-center p-4"
+              >
+                <h3
+                  class="text-3xl md:text-5xl font-black text-white text-center"
+                >
+                  Our Mission: A Global Fitness Movement
+                </h3>
+              </div>
+            </div>
+            <div class="carousel-slide h-full">
+              <img
+                src="https://images.pexels.com/photos/235922/pexels-photo-235922.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex items-center justify-center p-4"
+              >
+                <h3
+                  class="text-3xl md:text-5xl font-black text-white text-center"
+                >
+                  The Format: 8KM Run + 8 Workouts
+                </h3>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-button prev">
+            <i data-lucide="chevron-left"></i>
+          </button>
+          <button class="carousel-button next">
+            <i data-lucide="chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="container mx-auto px-4 max-w-5xl py-20">
+          <h2 class="text-4xl font-black text-blue-400 mb-8">RACE FORMAT</h2>
+
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-gray-300 mb-4">RACE</h3>
+            <p class="text-lg leading-relaxed mb-4">
+              Choose your level — Beginner, Intermediate, or Elite — and
+              experience the perfect mix of challenge, fun, and adventure!
+            </p>
+            <p class="text-lg leading-relaxed">
+              At FYTRR, we stand for
+              <strong class="text-orange-400">true equality</strong>. We don't
+              separate participants by gender because we believe every
+              individual—male or female—has their own unique strength and
+              potential. Our race is designed to celebrate capability and
+              endurance, ensuring everyone competes on equal ground based on
+              their fitness level,
+              <strong class="text-orange-400">not gender.</strong>
+            </p>
+          </div>
+
+          <div class="mb-16">
+            <h3 class="text-2xl font-bold text-orange-400 mb-4">CATEGORY</h3>
+            <ol
+              class="list-decimal list-inside text-lg leading-relaxed space-y-2"
+            >
+              <li>OPEN FOR ALL</li>
+              <li>MIXED</li>
+            </ol>
+            <p class="text-lg leading-relaxed mt-4">
+              In the <strong class="text-orange-400">Mixed Category</strong>,
+              the challenge reaches another level: participants must
+              <strong class="text-orange-400"
+                >run or walk during Run 4 while carrying their partner</strong
+              >, whether male or female, symbolising strength, teamwork, and
+              unity.
+            </p>
+          </div>
+  
+          <div class="relative max-w-full">
+            <img
+              src="raceFormat.png"
+              alt="FYTRR Race Format Flow Diagram"
+              class="w-full h-auto object-contain border-4 border-orange-500"
+            />
+          </div>
+        </div>
+      </section>
+
       <section id="schedule" data-page="schedule">
         <div class="carousel-container relative w-full h-72 rounded-lg">
           <div class="carousel-track h-full">
@@ -693,7 +795,7 @@
         </div>
       </section>
 
-      <section id="results" data-page="results" class="bg-black">
+      <section id="past-event" data-page="past-event" class="bg-black">
         <div class="carousel-container relative w-full h-72 rounded-lg">
           <div class="carousel-track h-full">
             <div class="carousel-slide h-full">
@@ -791,15 +893,14 @@
             <i data-lucide="chevron-right"></i>
           </button>
         </div>
+
         <div class="container mx-auto px-4 py-20">
           <div class="text-center mb-12">
             <h2 class="text-4xl font-black text-white section-title">
-              What is FYTRR?
+              ABOUT US
             </h2>
-            <p class="text-gray-400 mt-2">
-              The ultimate test of a well-rounded athlete.
-            </p>
           </div>
+
           <div class="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img
@@ -808,33 +909,69 @@
                 class="rounded-lg shadow-xl"
               />
             </div>
+
             <div class="space-y-6">
               <div>
                 <h3 class="text-2xl font-bold text-orange-400 mb-2">
-                  The Race Concept
+                  WHO WE ARE
                 </h3>
                 <p class="text-gray-300">
-                  FYTRR was born from a desire to create a definitive fitness
-                  test. Our format is simple but brutal: 8 x 1KM runs, with each
-                  kilometer followed by a unique functional fitness station.
-                  This challenges your cardio, strength, and mental fortitude in
-                  equal measure. It's not just a race; it's a statement about
-                  your dedication to fitness.
+                  We are a passionate community of fitness enthusiasts,
+                  athletes, and trainers dedicated to creating India's most
+                  challenging and rewarding fitness event. The **FYTRR** is more
+                  than just a competition, it's a movement that celebrates
+                  **strength**, **endurance**, **discipline**, and the **warrior
+                  spirit** within everyone.
                 </p>
               </div>
+
               <div>
                 <h3 class="text-2xl font-bold text-orange-400 mb-2">
-                  Our Mission
+                  WHAT WE DO
                 </h3>
                 <p class="text-gray-300">
-                  To create a global fitness movement that inspires people of
-                  all abilities to train with purpose, compete with heart, and
-                  join a community of warriors. We believe in the power of
-                  shared struggle and collective achievement.
+                  The **FYTRR** brings together athletes of all levels –
+                  beginners, intermediates, and elites – to test their limits
+                  across a series of functional fitness stations. Each event is
+                  designed to push participants physically and mentally through
+                  running, strength, endurance, and power challenges. With a
+                  structured and professional setup, we ensure a safe,
+                  competitive, and unforgettable fitness experience.
+                </p>
+                <p class="text-gray-300 mt-4">Our events combine:</p>
+                <ul
+                  class="text-gray-300 list-disc list-inside ml-4 space-y-2 mt-2"
+                >
+                  <li>
+                    **Endurance challenges** (running, battle rope, burpees)
+                  </li>
+                  <li>
+                    **Strength tests** (sled push, pull, tire flips, sandbag
+                    lunges)
+                  </li>
+                  <li>**Core activation** (functional stability drills)</li>
+                  <li>**Explosive power moves** (wall ball slams)</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="text-2xl font-bold text-orange-400 mb-2">
+                  Our Motto
+                </h3>
+                <p class="text-gray-300 italic mb-2">
+                  “Fight. Conquer. Repeat.”
+                </p>
+                <p class="text-gray-300">
+                  We believe fitness is not just about building the body, but
+                  about building character, resilience, and legacy. Our motto
+                  inspires every participant to fight through their limits,
+                  conquer their fears, and repeat the journey toward a stronger,
+                  better self.
                 </p>
               </div>
             </div>
           </div>
+
           <div class="mt-20">
             <h3 class="text-3xl font-bold text-white text-center mb-8">
               Rules & FAQs
@@ -984,6 +1121,126 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="join-us" data-page="join-us" class="bg-black py-16">
+        <div class="carousel-container relative w-full h-72 rounded-lg">
+          <div class="carousel-track h-full">
+            <div class="carousel-slide h-full">
+              <img
+                src="https://images.pexels.com/photos/2403391/pexels-photo-2403391.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex items-center justify-center p-4"
+              >
+                <h3
+                  class="text-3xl md:text-5xl font-black text-white text-center"
+                >
+                  Relive The Glory
+                </h3>
+              </div>
+            </div>
+            <div class="carousel-slide h-full">
+              <img
+                src="https://images.pexels.com/photos/6256233/pexels-photo-6256233.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex items-center justify-center p-4"
+              >
+                <h3
+                  class="text-3xl md:text-5xl font-black text-white text-center"
+                >
+                  Champions & Leaderboards
+                </h3>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-button prev">
+            <i data-lucide="chevron-left"></i>
+          </button>
+          <button class="carousel-button next">
+            <i data-lucide="chevron-right"></i>
+          </button>
+        </div>
+        <div class="container mx-auto px-4 max-w-4xl py-20">
+          <form class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <label
+                for="full-name"
+                class="block text-white text-lg font-semibold mb-2"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                id="full-name"
+                placeholder="Enter Full Name"
+                class="w-full bg-gray-700 text-white placeholder-gray-400 border-none rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              />
+            </div>
+            <div>
+              <label
+                for="contact-number"
+                class="block text-white text-lg font-semibold mb-2"
+                >Contact Number</label
+              >
+              <input
+                type="tel"
+                id="contact-number"
+                placeholder="Enter Contact Number"
+                class="w-full bg-gray-700 text-white placeholder-gray-400 border-none rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              />
+            </div>
+            <div>
+              <label
+                for="email"
+                class="block text-white text-lg font-semibold mb-2"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+                class="w-full bg-gray-700 text-white placeholder-gray-400 border-none rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              />
+            </div>
+            <div>
+              <label
+                for="company-name"
+                class="block text-white text-lg font-semibold mb-2"
+                >Company Name</label
+              >
+              <input
+                type="text"
+                id="company-name"
+                placeholder="Enter Company Name"
+                class="w-full bg-gray-700 text-white placeholder-gray-400 border-none rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              />
+            </div>
+            <div class="md:col-span-2">
+              <label
+                for="city"
+                class="block text-white text-lg font-semibold mb-2"
+                >City</label
+              >
+              <input
+                type="text"
+                id="city"
+                placeholder="Enter City"
+                class="w-full bg-gray-700 text-white placeholder-gray-400 border-none rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              />
+            </div>
+            <div class="md:col-span-2 mt-4">
+              <button
+                type="submit"
+                class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-md text-lg transition-colors duration-300"
+              >
+                SEND MESSAGE
+              </button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
