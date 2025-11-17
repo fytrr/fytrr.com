@@ -733,7 +733,7 @@ function showRegistrationModal(eventId = null) {
   }
 
   document.getElementById("team-name-wrapper").classList.add("hidden");
-  document.getElementById("reg-price").textContent = `$${defaultPrice}`;
+  document.getElementById("reg-price").textContent = ` ₹${defaultPrice}`;
 
   registrationModal.style.display = "flex";
   lucide.createIcons();
