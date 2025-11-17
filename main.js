@@ -218,7 +218,7 @@ function setupEventListeners() {
           ? selectedEvent.price
           : selectedEvent.price * 2 - 20;
     }
-    document.getElementById("reg-price").textContent = `$${price}`;
+    document.getElementById("reg-price").textContent = `${price}`;
   });
 
   document.getElementById("reg-event").addEventListener("change", (e) => {
@@ -226,7 +226,7 @@ function setupEventListeners() {
     if (selectedEvent) {
       document.getElementById(
         "reg-price"
-      ).textContent = `$${selectedEvent.price}`;
+      ).textContent = ` ₹${selectedEvent.price}`;
       document.getElementById("reg-type").value = "solo";
       document.getElementById("team-name-wrapper").classList.add("hidden");
     }
