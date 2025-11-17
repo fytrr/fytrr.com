@@ -34,6 +34,7 @@
     <meta name="twitter:card" content="summary_large_image" />
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://unpkg.com/tailwindcss@3.4.1/dist/tailwind.min.js"></script> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -602,7 +603,7 @@
       <section
         id="race-format"
         data-page="race-format"
-        class="bg-black py-16 text-white"
+        class="bg-black text-white"
       >
         <div class="carousel-container relative w-full h-72 rounded-lg">
           <div class="carousel-track h-full">
@@ -645,64 +646,290 @@
           </button>
         </div>
 
-        <div class="container mx-auto px-4 max-w-5xl py-20">
-          <h2 class="text-4xl font-black text-blue-400 mb-8">RACE FORMAT</h2>
-
-          <div class="mb-12">
-            <h3 class="text-2xl font-bold text-gray-300 mb-4">RACE</h3>
-            <p class="text-lg leading-relaxed mb-4">
-              Choose your level — Beginner, Intermediate, or Elite — and
-              experience the perfect mix of challenge, fun, and adventure!
-            </p>
-            <p class="text-lg leading-relaxed">
-              At FYTRR, we stand for
-              <strong class="text-orange-400">true equality</strong>. We don't
-              separate participants by gender because we believe every
-              individual—male or female—has their own unique strength and
-              potential. Our race is designed to celebrate capability and
-              endurance, ensuring everyone competes on equal ground based on
-              their fitness level,
-              <strong class="text-orange-400">not gender.</strong>
-            </p>
-          </div>
-
-          <div class="mb-16">
-            <h3 class="text-2xl font-bold text-orange-400 mb-4">CATEGORY</h3>
-            <ol
-              class="list-decimal list-inside text-lg leading-relaxed space-y-2"
+        <div class="container mx-auto px-4 max-w-6xl py-20">
+          <!-- Main Title -->
+          <div class="text-center mb-16 fade-in-up">
+            <div
+              class="inline-block bg-gray-900 border border-gray-700 text-sm font-semibold px-4 py-2 rounded-full mb-4"
             >
-              <li>SINGLE</li>
-              <li>MIXED</li>
-            </ol>
-            <p class="text-lg leading-relaxed mt-4">
-              In the <strong class="text-orange-400">Mixed Category</strong>,
-              the challenge reaches another level: participants must
-              <strong class="text-orange-400"
-                >run or walk during Run 4 while carrying their partner</strong
-              >, whether male or female, symbolising strength, teamwork, and
-              unity.
+              <span class="text-orange-400">"</span>
+              <span class="text-gray-300 tracking-wider ml-2 uppercase"
+                >The Challenge</span
+              >
+            </div>
+            <h2
+              class="text-4xl md:text-6xl font-black text-white section-title mb-4"
+            >
+              RACE <span class="text-orange-400">FORMAT</span>
+            </h2>
+            <div
+              class="w-24 h-1 bg-gradient-to-r from-orange-500 to-red-500 mx-auto rounded-full"
+            ></div>
+            <p class="text-gray-400 mt-6 text-lg max-w-3xl mx-auto">
+              Discover the ultimate hybrid fitness challenge that will test
+              every aspect of your athleticism
             </p>
           </div>
 
-          <div class="relative max-w-full mb-12">
-            <img
-              src="raceFormat_.png"
-              alt="FYTRR Race Format Flow Diagram"
-              class="w-full h-auto object-contain border-4 border-orange-500"
-            />
+          <!-- Race Levels Card -->
+          <div class="mb-16 fade-in-up">
+            <div class="format-hero-card">
+              <div class="flex items-center gap-4 mb-6">
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center"
+                >
+                  <i data-lucide="trophy" class="w-8 h-8 text-white"></i>
+                </div>
+                <div>
+                  <h3 class="text-3xl font-black text-white">
+                    CHOOSE YOUR LEVEL
+                  </h3>
+                  <p class="text-gray-400">Find your perfect challenge</p>
+                </div>
+              </div>
+
+              <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="level-badge beginner">
+                  <div class="level-icon">🟢</div>
+                  <h4 class="text-xl font-bold text-white mb-1">BEGINNER</h4>
+                  <p class="text-sm text-gray-400">Perfect for first-timers</p>
+                </div>
+                <div class="level-badge intermediate">
+                  <div class="level-icon">🟡</div>
+                  <h4 class="text-xl font-bold text-white mb-1">
+                    INTERMEDIATE
+                  </h4>
+                  <p class="text-sm text-gray-400">Ready for more intensity</p>
+                </div>
+                <div class="level-badge elite">
+                  <div class="level-icon">🔴</div>
+                  <h4 class="text-xl font-bold text-white mb-1">ELITE</h4>
+                  <p class="text-sm text-gray-400">Ultimate warrior status</p>
+                </div>
+              </div>
+
+              <div class="equality-banner">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center"
+                  >
+                    <i data-lucide="scale" class="w-6 h-6 text-white"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-xl font-bold text-orange-400 mb-2">
+                      TRUE EQUALITY
+                    </h4>
+                    <p class="text-gray-300 leading-relaxed">
+                      At FYTRR, we stand for
+                      <strong class="text-orange-400">true equality</strong>. We
+                      don't separate participants by gender because we believe
+                      every individual—male or female—has their own unique
+                      strength and potential. Our race is designed to celebrate
+                      capability and endurance, ensuring everyone competes on
+                      equal ground based on their fitness level,
+                      <strong class="text-orange-400">not gender.</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="mt-8">
-            <h3 class="text-3xl font-black text-orange-500 mb-4">
-              RUN AND ZONE HOW IT WORK ?
-            </h3>
-            <p class="text-xl leading-relaxed max-w-4xl">
-              The FYTRR race combines running and workouts in a progressive
-              challenge. It starts with Run 1, followed by three workout zones —
-              Zone 1 (2 workouts), Zone 2 (3 workouts), and Zone 3 (4 workouts)
-              — each separated by runs. The race ends with Run 4, pushing you to
-              the finish line and marking your ultimate victory.
-            </p>
+          <!-- Categories Section -->
+          <div class="mb-16 fade-in-up">
+            <div class="text-center mb-8">
+              <h3 class="text-3xl font-black text-white mb-2">
+                RACE <span class="text-orange-400">CATEGORIES</span>
+              </h3>
+              <p class="text-gray-400">
+                Choose to go solo or team up with a partner
+              </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+              <!-- Single Category -->
+              <div class="category-card group">
+                <div class="category-icon-wrapper">
+                  <div class="category-icon">
+                    <i data-lucide="user" class="w-10 h-10 text-white"></i>
+                  </div>
+                  <div class="category-badge">01</div>
+                </div>
+                <h4 class="text-2xl font-black text-white mb-3">SINGLE</h4>
+                <p class="text-gray-300 mb-4">
+                  Take on the challenge individually. Test your limits, push
+                  through barriers, and prove your warrior spirit. Every rep,
+                  every run, every moment is yours to conquer.
+                </p>
+                <div class="flex items-center gap-2 text-orange-400">
+                  <i data-lucide="check-circle" class="w-5 h-5"></i>
+                  <span class="text-sm font-semibold">Individual Glory</span>
+                </div>
+              </div>
+
+              <!-- Mixed Category -->
+              <div class="category-card group special">
+                <div class="category-icon-wrapper">
+                  <div class="category-icon">
+                    <i data-lucide="users" class="w-10 h-10 text-white"></i>
+                  </div>
+                  <div class="category-badge">02</div>
+                </div>
+                <h4 class="text-2xl font-black text-white mb-3">MIXED</h4>
+                <p class="text-gray-300 mb-4">
+                  Partner up for the ultimate teamwork challenge. In this
+                  category, the intensity amplifies as participants must
+                  <strong class="text-orange-400"
+                    >carry their partner during Run 4</strong
+                  >, symbolizing strength, unity, and unwavering support.
+                </p>
+                <div class="space-y-2">
+                  <div class="flex items-center gap-2 text-orange-400">
+                    <i data-lucide="check-circle" class="w-5 h-5"></i>
+                    <span class="text-sm font-semibold">Team Synergy</span>
+                  </div>
+                  <div class="flex items-center gap-2 text-orange-400">
+                    <i data-lucide="zap" class="w-5 h-5"></i>
+                    <span class="text-sm font-semibold"
+                      >Partner Carry Challenge</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Race Format Diagram -->
+          <div class="mb-16 fade-in-up">
+            <div class="text-center mb-8">
+              <h3 class="text-3xl font-black text-white mb-2">
+                THE <span class="text-orange-400">RACE FLOW</span>
+              </h3>
+              <p class="text-gray-400">
+                Your journey from start to finish line
+              </p>
+            </div>
+
+            <div class="diagram-container">
+              <div class="diagram-glow"></div>
+              <img
+                src="raceFormat_.png"
+                alt="FYTRR Race Format Flow Diagram"
+                class="w-full h-auto object-contain relative z-10"
+              />
+            </div>
+          </div>
+
+          <!-- How It Works Section -->
+          <div class="fade-in-up">
+            <div class="how-it-works-card">
+              <div class="flex items-center gap-4 mb-8">
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center pulse-animation"
+                >
+                  <i data-lucide="activity" class="w-8 h-8 text-white"></i>
+                </div>
+                <div>
+                  <h3 class="text-3xl font-black text-white">HOW IT WORKS</h3>
+                  <p class="text-gray-400">
+                    The progressive challenge breakdown
+                  </p>
+                </div>
+              </div>
+
+              <div class="space-y-6">
+                <p class="text-xl text-gray-300 leading-relaxed">
+                  The FYTRR race combines
+                  <span class="text-orange-400 font-bold">running</span> and
+                  <span class="text-orange-400 font-bold"
+                    >functional workouts</span
+                  >
+                  in a progressive challenge that will push you to your absolute
+                  limits.
+                </p>
+
+                <!-- Breakdown Grid -->
+                <div class="grid md:grid-cols-4 gap-4 mt-8">
+                  <div class="workout-step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">🏃</div>
+                    <h5 class="text-lg font-bold text-white mb-1">RUN 1</h5>
+                    <p class="text-sm text-gray-400">Warm up & set pace</p>
+                  </div>
+
+                  <div class="workout-step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">💪</div>
+                    <h5 class="text-lg font-bold text-white mb-1">ZONE 1</h5>
+                    <p class="text-sm text-gray-400">2 workouts</p>
+                  </div>
+
+                  <div class="workout-step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">🔥</div>
+                    <h5 class="text-lg font-bold text-white mb-1">ZONE 2</h5>
+                    <p class="text-sm text-gray-400">3 workouts</p>
+                  </div>
+
+                  <div class="workout-step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">⚡</div>
+                    <h5 class="text-lg font-bold text-white mb-1">ZONE 3</h5>
+                    <p class="text-sm text-gray-400">4 workouts</p>
+                  </div>
+                </div>
+
+                <!-- Flow Description -->
+                <div class="flow-description">
+                  <div class="flex items-start gap-3 mb-4">
+                    <div
+                      class="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-sm"
+                    >
+                      ⚡
+                    </div>
+                    <p class="text-gray-300">
+                      Each workout zone is
+                      <strong class="text-orange-400">separated by runs</strong
+                      >, testing both your cardiovascular endurance and muscular
+                      strength in a continuous flow.
+                    </p>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <div
+                      class="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-sm"
+                    >
+                      🏁
+                    </div>
+                    <p class="text-gray-300">
+                      The race culminates with
+                      <strong class="text-orange-400">RUN 4</strong> — your
+                      final push to the finish line, marking your ultimate
+                      victory and transformation into a true FYTRR warrior.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stats Section -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 fade-in-up">
+            <div class="stat-card">
+              <div class="stat-number">4</div>
+              <div class="stat-label">Running Zones</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">9</div>
+              <div class="stat-label">Workouts</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">3</div>
+              <div class="stat-label">Challenge Zones</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">∞</div>
+              <div class="stat-label">Memories</div>
+            </div>
           </div>
         </div>
       </section>
@@ -865,10 +1092,10 @@
         </div>
       </section>
 
-      <section id="about" data-page="about">
-        <div class="carousel-container relative w-full h-72 rounded-lg">
+      <section id="about" data-page="about" class="overflow-hidden">
+        <div class="carousel-container relative w-full h-72 rounded-lg group">
           <div class="carousel-track h-full">
-            <div class="carousel-slide h-full">
+            <div class="carousel-slide h-full relative">
               <img
                 src="https://images.pexels.com/photos/2261477/pexels-photo-2261477.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800"
                 class="w-full h-full object-cover"
@@ -877,13 +1104,14 @@
                 class="absolute inset-0 bg-black/60 flex items-center justify-center p-4"
               >
                 <h3
-                  class="text-3xl md:text-5xl font-black text-white text-center"
+                  class="text-3xl md:text-5xl font-black text-white text-center animate-fade-in"
                 >
                   Our Mission: A Global Fitness Movement
                 </h3>
               </div>
             </div>
-            <div class="carousel-slide h-full">
+
+            <div class="carousel-slide h-full relative">
               <img
                 src="https://images.pexels.com/photos/235922/pexels-photo-235922.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800"
                 class="w-full h-full object-cover"
@@ -894,11 +1122,12 @@
                 <h3
                   class="text-3xl md:text-5xl font-black text-white text-center"
                 >
-                  The Format: 4 Running Zone + 9 Functional Workouts in 3 Zone
+                  The Format: 4 Running Zone + 9 Functional Workouts in 3 Zones
                 </h3>
               </div>
             </div>
           </div>
+
           <button class="carousel-button prev">
             <i data-lucide="chevron-left"></i>
           </button>
@@ -908,84 +1137,257 @@
         </div>
 
         <div class="container mx-auto px-4 py-20">
-          <div class="text-center mb-12">
-            <h2 class="text-4xl font-black text-white section-title">
-              ABOUT US
+          <!-- Title with enhanced styling -->
+          <div class="text-center mb-16 fade-in-up">
+            <div
+              class="inline-block bg-gray-900 border border-gray-700 text-sm font-semibold px-4 py-2 rounded-full mb-4"
+            >
+              <span class="text-orange-400">"</span>
+              <span class="text-gray-300 tracking-wider ml-2 uppercase"
+                >Our Story</span
+              >
+            </div>
+            <h2
+              class="text-4xl md:text-6xl font-black text-white section-title mb-4"
+            >
+              ABOUT <span class="text-orange-400">US</span>
             </h2>
+            <div
+              class="w-24 h-1 bg-gradient-to-r from-orange-500 to-red-500 mx-auto rounded-full"
+            ></div>
+            <p class="text-gray-400 max-w-2xl mx-auto mt-6 text-lg">
+              A movement that builds strength, spirit, and unstoppable will.
+            </p>
           </div>
 
-          <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <img
-                src="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=600&h=400"
-                alt="Athletes competing"
-                class="rounded-lg shadow-xl"
-              />
-            </div>
-
-            <div class="space-y-6">
-              <div>
-                <h3 class="text-2xl font-bold text-orange-400 mb-2">
-                  WHO WE ARE
-                </h3>
-                <p class="text-gray-300">
-                  We are a passionate community of fitness enthusiasts,
-                  athletes, and trainers dedicated to creating India's most
-                  challenging and rewarding fitness event. The FYTRR is more
-                  than just a competition, it's a movement that celebrates
-                  strength, endurance, discipline, and the warrior spirit within
-                  everyone.
-                </p>
-              </div>
-
-              <div>
-                <h3 class="text-2xl font-bold text-orange-400 mb-2">
-                  WHAT WE DO
-                </h3>
-                <p class="text-gray-300">
-                  The FYTRR brings together athletes of all levels – beginners,
-                  intermediates, and elites – to test their limits across a
-                  series of functional fitness stations. Each event is designed
-                  to push participants physically and mentally through running,
-                  strength, endurance, and power challenges. With a structured
-                  and professional setup, we ensure a safe, competitive, and
-                  unforgettable fitness experience.
-                </p>
-                <p class="text-gray-300 mt-4">Our events combine:</p>
-                <ul
-                  class="text-gray-300 list-disc list-inside ml-4 space-y-2 mt-2"
+          <!-- Main Content Grid with Staggered Animations -->
+          <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+            <!-- Image Side with Hover Effect -->
+            <div class="fade-in-left relative group">
+              <div
+                class="absolute -inset-1 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000"
+              ></div>
+              <div class="relative">
+                <img
+                  src="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=600&h=400"
+                  alt="Athletes competing"
+                  class="rounded-lg shadow-2xl transform group-hover:scale-105 transition duration-500"
+                />
+                <!-- Overlay stats -->
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-6 rounded-b-lg"
                 >
-                  <li>Endurance challenges (running, battle rope, burpees)</li>
-                  <li>
-                    Strength tests (sled push, pull, tire flips, sandbag lunges)
-                  </li>
-                  <li>Core activation (functional stability drills)</li>
-                  <li>Explosive power moves (wall ball slams)</li>
-                </ul>
+                  <div class="flex justify-around text-center">
+                    <div class="stat-item">
+                      <div class="text-3xl font-black text-orange-400">
+                        10K+
+                      </div>
+                      <div class="text-xs text-gray-300">Warriors</div>
+                    </div>
+                    <div class="stat-item">
+                      <div class="text-3xl font-black text-orange-400">50+</div>
+                      <div class="text-xs text-gray-300">Events</div>
+                    </div>
+                    <div class="stat-item">
+                      <div class="text-3xl font-black text-orange-400">20+</div>
+                      <div class="text-xs text-gray-300">Cities</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Text Content Side -->
+            <div class="space-y-8 fade-in-right">
+              <!-- Who We Are Card -->
+              <div class="about-card group">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i data-lucide="users" class="w-6 h-6 text-white"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h3
+                      class="text-2xl font-bold text-orange-400 mb-3 group-hover:text-orange-300 transition-colors"
+                    >
+                      WHO WE ARE
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed">
+                      We are a passionate community of fitness enthusiasts,
+                      athletes, and trainers committed to creating India's most
+                      challenging and rewarding hybrid fitness experience. The
+                      FYTRR is more than just a competition—it's a movement that
+                      celebrates strength, endurance, discipline, and the
+                      warrior spirit within everyone.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              <div>
-                <h3 class="text-2xl font-bold text-orange-400 mb-2">
-                  Our Motto
-                </h3>
-                <p class="text-gray-300 italic mb-2">
-                  “Fight. Conquer. Repeat.”
-                </p>
-                <p class="text-gray-300">
-                  We believe fitness is not just about building the body, but
-                  about building character, resilience, and legacy. Our motto
-                  inspires every participant to fight through their limits,
-                  conquer their fears, and repeat the journey toward a stronger,
-                  better self.
-                </p>
+              <!-- What We Do Card -->
+              <div class="about-card group">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i data-lucide="target" class="w-6 h-6 text-white"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h3
+                      class="text-2xl font-bold text-orange-400 mb-3 group-hover:text-orange-300 transition-colors"
+                    >
+                      WHAT WE DO
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                      Every FYTRR event is engineered to push your mental and
+                      physical limits through strength, endurance, and
+                      power-based challenges. Each event is designed with a
+                      structured and professional setup, ensuring a safe,
+                      competitive, and unforgettable fitness experience.
+                    </p>
+                    <p class="text-gray-300 font-semibold mb-3">
+                      Our events combine:
+                    </p>
+                    <ul class="space-y-2">
+                      <li
+                        class="flex items-start gap-2 text-gray-300 hover:text-orange-400 transition-colors"
+                      >
+                        <span class="text-orange-400 mt-1">▸</span>
+                        <span
+                          >Endurance tests (Running, Battle Rope, Burpees)</span
+                        >
+                      </li>
+                      <li
+                        class="flex items-start gap-2 text-gray-300 hover:text-orange-400 transition-colors"
+                      >
+                        <span class="text-orange-400 mt-1">▸</span>
+                        <span
+                          >Strength (Sled Push/Pull, Tire Flip, Sandbag
+                          Lunges)</span
+                        >
+                      </li>
+                      <li
+                        class="flex items-start gap-2 text-gray-300 hover:text-orange-400 transition-colors"
+                      >
+                        <span class="text-orange-400 mt-1">▸</span>
+                        <span>Core Stability drills</span>
+                      </li>
+                      <li
+                        class="flex items-start gap-2 text-gray-300 hover:text-orange-400 transition-colors"
+                      >
+                        <span class="text-orange-400 mt-1">▸</span>
+                        <span>Explosive wall ball power circuits</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Our Motto Card -->
+              <div class="about-card group">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i data-lucide="flame" class="w-6 h-6 text-white"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h3
+                      class="text-2xl font-bold text-orange-400 mb-3 group-hover:text-orange-300 transition-colors"
+                    >
+                      OUR MOTTO
+                    </h3>
+                    <div
+                      class="bg-gradient-to-r from-orange-500/20 to-red-500/20 border-l-4 border-orange-500 p-4 rounded-r-lg mb-3"
+                    >
+                      <p class="text-gray-100 italic text-xl font-semibold">
+                        "Fight. Conquer. Repeat."
+                      </p>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                      We believe fitness is not just about building the body,
+                      but about building character, resilience, and legacy. Our
+                      motto inspires every participant to fight through their
+                      limits, conquer their fears, and repeat the journey toward
+                      a stronger, better self.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="mt-20">
-            <h3 class="text-3xl font-bold text-white text-center mb-8">
-              Rules & FAQs
+          <!-- Core Values Section -->
+          <div class="py-16 fade-in-up">
+            <h3 class="text-3xl font-bold text-white text-center mb-12">
+              <span class="text-orange-400">OUR CORE</span> VALUES
             </h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <div class="value-card group">
+                <div class="text-center p-6">
+                  <div
+                    class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:rotate-12 transition-transform duration-300"
+                  >
+                    <i data-lucide="heart" class="w-8 h-8 text-white"></i>
+                  </div>
+                  <h4 class="text-xl font-bold text-white mb-2">Passion</h4>
+                  <p class="text-gray-400 text-sm">
+                    Driven by love for fitness
+                  </p>
+                </div>
+              </div>
+              <div class="value-card group">
+                <div class="text-center p-6">
+                  <div
+                    class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:rotate-12 transition-transform duration-300"
+                  >
+                    <i data-lucide="shield" class="w-8 h-8 text-white"></i>
+                  </div>
+                  <h4 class="text-xl font-bold text-white mb-2">Integrity</h4>
+                  <p class="text-gray-400 text-sm">Fair and transparent</p>
+                </div>
+              </div>
+              <div class="value-card group">
+                <div class="text-center p-6">
+                  <div
+                    class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:rotate-12 transition-transform duration-300"
+                  >
+                    <i data-lucide="zap" class="w-8 h-8 text-white"></i>
+                  </div>
+                  <h4 class="text-xl font-bold text-white mb-2">Excellence</h4>
+                  <p class="text-gray-400 text-sm">Pushing boundaries</p>
+                </div>
+              </div>
+              <div class="value-card group">
+                <div class="text-center p-6">
+                  <div
+                    class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:rotate-12 transition-transform duration-300"
+                  >
+                    <i data-lucide="users-2" class="w-8 h-8 text-white"></i>
+                  </div>
+                  <h4 class="text-xl font-bold text-white mb-2">Community</h4>
+                  <p class="text-gray-400 text-sm">Together we rise</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Section -->
+          <div class="mt-20 fade-in-up">
+            <div class="text-center mb-12">
+              <div
+                class="inline-block bg-gray-900 border border-gray-700 text-sm font-semibold px-4 py-2 rounded-full mb-4"
+              >
+                <span class="text-orange-400">"</span>
+                <span class="text-gray-300 tracking-wider ml-2 uppercase"
+                  >Got Questions?</span
+                >
+              </div>
+              <h3 class="text-3xl md:text-4xl font-bold text-white mb-2">
+                Rules & <span class="text-orange-400">FAQs</span>
+              </h3>
+            </div>
             <div id="faq-container" class="max-w-3xl mx-auto space-y-4"></div>
           </div>
         </div>
@@ -1148,7 +1550,7 @@
                 <h3
                   class="text-3xl md:text-5xl font-black text-white text-center"
                 >
-                  Relive The Glory
+                  Partner With The Best
                 </h3>
               </div>
             </div>
@@ -1163,7 +1565,7 @@
                 <h3
                   class="text-3xl md:text-5xl font-black text-white text-center"
                 >
-                  Champions & Leaderboards
+                  Build India's Fitness Future
                 </h3>
               </div>
             </div>
@@ -1176,124 +1578,306 @@
           </button>
         </div>
 
-        <div class="container mx-auto px-4 max-w-4xl py-20">
-          <div class="mb-12">
-            <h2 class="text-4xl font-black text-blue-400 mb-8">
-              <span class="text-orange-500">PARTNER BENEFITS</span>
+        <div class="container mx-auto px-4 max-w-6xl py-20">
+          <!-- Title Section -->
+          <div class="text-center mb-16 fade-in-up">
+            <div
+              class="inline-block bg-gray-900 border border-gray-700 text-sm font-semibold px-4 py-2 rounded-full mb-4"
+            >
+              <span class="text-orange-400">"</span>
+              <span class="text-gray-300 tracking-wider ml-2 uppercase"
+                >Join The Movement</span
+              >
+            </div>
+            <h2
+              class="text-4xl md:text-6xl font-black text-white section-title mb-4"
+            >
+              PARTNER <span class="text-orange-400">WITH US</span>
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
-              <div>
-                <h3 class="text-xl font-bold text-orange-400 mb-2">
-                  Event Management Expertise:
-                </h3>
-                <p class="text-gray-300">
+            <div
+              class="w-24 h-1 bg-gradient-to-r from-orange-500 to-red-500 mx-auto rounded-full"
+            ></div>
+            <p class="text-gray-400 max-w-3xl mx-auto mt-6 text-lg">
+              Join hands with India's fastest-growing fitness movement and be
+              part of something extraordinary
+            </p>
+          </div>
+
+          <!-- Benefits Section -->
+          <div class="mb-20 fade-in-up">
+            <h3 class="text-3xl font-black text-white text-center mb-12">
+              WHY <span class="text-orange-400">PARTNER WITH FYTRR?</span>
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- Benefit Card 1 -->
+              <div class="benefit-card group">
+                <div class="benefit-icon-wrapper">
+                  <div class="benefit-icon">
+                    <i data-lucide="trophy" class="w-8 h-8 text-white"></i>
+                  </div>
+                </div>
+                <h4 class="text-xl font-bold text-orange-400 mb-3">
+                  Event Management Expertise
+                </h4>
+                <p class="text-gray-300 leading-relaxed">
                   Proven ability to plan and execute large-scale events with
                   precision, ensuring seamless coordination, smooth operations,
                   and exceptional participant experience.
                 </p>
+                <div class="benefit-stat">
+                  <span class="stat-number">100+</span>
+                  <span class="stat-label">Events Organized</span>
+                </div>
               </div>
 
-              <div>
-                <h3 class="text-xl font-bold text-orange-400 mb-2">
-                  Mass Participation Event Expertise:
-                </h3>
-                <p class="text-gray-300">
+              <!-- Benefit Card 2 -->
+              <div class="benefit-card group">
+                <div class="benefit-icon-wrapper">
+                  <div class="benefit-icon">
+                    <i data-lucide="users" class="w-8 h-8 text-white"></i>
+                  </div>
+                </div>
+                <h4 class="text-xl font-bold text-orange-400 mb-3">
+                  Mass Participation Events
+                </h4>
+                <p class="text-gray-300 leading-relaxed">
                   Leverage a tested and successful event format that draws
                   thousands of participants, creating high energy, strong
                   community engagement, and maximum visibility and impact.
                 </p>
+                <div class="benefit-stat">
+                  <span class="stat-number">10K+</span>
+                  <span class="stat-label">Active Participants</span>
+                </div>
               </div>
 
-              <div>
-                <h3 class="text-xl font-bold text-orange-400 mb-2">
-                  Marketing and Brand Building:
-                </h3>
-                <p class="text-gray-300">
-                  Utilise a strategic framework to promote and position The
-                  FYTRR is new in markets, enhancing brand recognition, boosting
-                  audience engagement, and ensuring sustainable long-term
-                  growth.
+              <!-- Benefit Card 3 -->
+              <div class="benefit-card group">
+                <div class="benefit-icon-wrapper">
+                  <div class="benefit-icon">
+                    <i data-lucide="trending-up" class="w-8 h-8 text-white"></i>
+                  </div>
+                </div>
+                <h4 class="text-xl font-bold text-orange-400 mb-3">
+                  Marketing & Brand Building
+                </h4>
+                <p class="text-gray-300 leading-relaxed">
+                  Utilize a strategic framework to promote and position FYTRR in
+                  new markets, enhancing brand recognition, boosting audience
+                  engagement, and ensuring sustainable long-term growth.
+                </p>
+                <div class="benefit-stat">
+                  <span class="stat-number">5M+</span>
+                  <span class="stat-label">Social Reach</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Partnership Opportunities -->
+          <div class="mb-20 fade-in-up">
+            <h3 class="text-3xl font-black text-white text-center mb-10">
+              PARTNERSHIP <span class="text-orange-400">OPPORTUNITIES</span>
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div class="opportunity-card">
+                <div class="opportunity-icon">🏆</div>
+                <h5 class="text-lg font-bold text-white mb-2">Title Sponsor</h5>
+                <p class="text-gray-400 text-sm">
+                  Maximum brand visibility across all touchpoints
+                </p>
+              </div>
+              <div class="opportunity-card">
+                <div class="opportunity-icon">⚡</div>
+                <h5 class="text-lg font-bold text-white mb-2">Co-Sponsor</h5>
+                <p class="text-gray-400 text-sm">
+                  Strategic brand association with specific zones
+                </p>
+              </div>
+              <div class="opportunity-card">
+                <div class="opportunity-icon">🎯</div>
+                <h5 class="text-lg font-bold text-white mb-2">Event Partner</h5>
+                <p class="text-gray-400 text-sm">
+                  Collaborate on specific event components
+                </p>
+              </div>
+              <div class="opportunity-card">
+                <div class="opportunity-icon">🤝</div>
+                <h5 class="text-lg font-bold text-white mb-2">Media Partner</h5>
+                <p class="text-gray-400 text-sm">
+                  Amplify reach through media collaboration
                 </p>
               </div>
             </div>
           </div>
-          <hr class="border-t border-gray-800 my-12" />
 
-          <form class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <label
-                for="full-name"
-                class="block text-white text-lg font-semibold mb-2"
-                >Full Name</label
-              >
-              <input
-                type="text"
-                id="full-name"
-                placeholder="Enter Full Name"
-                class="w-full bg-gray-700 text-white placeholder-gray-400 border-none rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
-              />
+          <!-- Contact Form Section -->
+          <div class="fade-in-up">
+            <div class="form-container">
+              <div class="form-header">
+                <h3 class="text-3xl font-black text-white mb-2">
+                  LET'S <span class="text-orange-400">CONNECT</span>
+                </h3>
+                <p class="text-gray-400">
+                  Fill out the form below and our team will get back to you
+                  within 24 hours
+                </p>
+              </div>
+
+              <form id="partner-form" class="partner-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="full-name" class="form-label">
+                      <i data-lucide="user" class="w-4 h-4"></i>
+                      Full Name *
+                    </label>
+                    <input
+                      type="text"
+                      id="full-name"
+                      placeholder="Enter your full name"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact-number" class="form-label">
+                      <i data-lucide="phone" class="w-4 h-4"></i>
+                      Contact Number *
+                    </label>
+                    <input
+                      type="tel"
+                      id="contact-number"
+                      placeholder="+91 XXXXX XXXXX"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="email" class="form-label">
+                      <i data-lucide="mail" class="w-4 h-4"></i>
+                      Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="your@email.com"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="company-name" class="form-label">
+                      <i data-lucide="building" class="w-4 h-4"></i>
+                      Company Name *
+                    </label>
+                    <input
+                      type="text"
+                      id="company-name"
+                      placeholder="Your company name"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="city" class="form-label">
+                      <i data-lucide="map-pin" class="w-4 h-4"></i>
+                      City *
+                    </label>
+                    <input
+                      type="text"
+                      id="city"
+                      placeholder="Your city"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="partnership-type" class="form-label">
+                      <i data-lucide="handshake" class="w-4 h-4"></i>
+                      Partnership Interest
+                    </label>
+                    <select id="partnership-type" class="form-input">
+                      <option value="">Select partnership type</option>
+                      <option value="title">Title Sponsor</option>
+                      <option value="co-sponsor">Co-Sponsor</option>
+                      <option value="event">Event Partner</option>
+                      <option value="media">Media Partner</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">
+                    <i data-lucide="message-square" class="w-4 h-4"></i>
+                    Message (Optional)
+                  </label>
+                  <textarea
+                    id="message"
+                    rows="4"
+                    placeholder="Tell us more about your partnership goals..."
+                    class="form-input"
+                  ></textarea>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="submit-button">
+                    <span>SEND MESSAGE</span>
+                    <i data-lucide="send" class="w-5 h-5"></i>
+                  </button>
+                </div>
+              </form>
+
+              <!-- Success Message (Hidden by default) -->
+              <div id="form-success" class="form-success hidden">
+                <i
+                  data-lucide="check-circle"
+                  class="w-16 h-16 text-green-400 mx-auto mb-4"
+                ></i>
+                <h4 class="text-2xl font-bold text-white mb-2">Thank You!</h4>
+                <p class="text-gray-400">
+                  Your message has been sent successfully. We'll be in touch
+                  soon!
+                </p>
+              </div>
             </div>
-            <div>
-              <label
-                for="contact-number"
-                class="block text-white text-lg font-semibold mb-2"
-                >Contact Number</label
-              >
-              <input
-                type="tel"
-                id="contact-number"
-                placeholder="Enter Contact Number"
-                class="w-full bg-gray-700 text-white placeholder-gray-400 border-none rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
-              />
+          </div>
+
+          <!-- CTA Banner -->
+          <div class="mt-20 fade-in-up">
+            <div class="cta-banner">
+              <div class="cta-content">
+                <h3 class="text-3xl md:text-4xl font-black text-white mb-3">
+                  Ready to Make an <span class="text-orange-400">Impact?</span>
+                </h3>
+                <p class="text-gray-300 text-lg mb-6">
+                  Join the FYTRR movement and be part of India's fitness
+                  revolution
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center">
+                  <a href="mailto: info.fytrr@gmail.com" class="cta-link">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                    info.fytrr@gmail.com
+                  </a>
+                  <a href="tel:+919153594190" class="cta-link">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                    +91 9153594190
+                  </a>
+                </div>
+              </div>
             </div>
-            <div>
-              <label
-                for="email"
-                class="block text-white text-lg font-semibold mb-2"
-                >Email</label
-              >
-              <input
-                type="email"
-                id="email"
-                placeholder="Enter Email"
-                class="w-full bg-gray-700 text-white placeholder-gray-400 border-none rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
-              />
-            </div>
-            <div>
-              <label
-                for="company-name"
-                class="block text-white text-lg font-semibold mb-2"
-                >Company Name</label
-              >
-              <input
-                type="text"
-                id="company-name"
-                placeholder="Enter Company Name"
-                class="w-full bg-gray-700 text-white placeholder-gray-400 border-none rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
-              />
-            </div>
-            <div class="md:col-span-2">
-              <label
-                for="city"
-                class="block text-white text-lg font-semibold mb-2"
-                >City</label
-              >
-              <input
-                type="text"
-                id="city"
-                placeholder="Enter City"
-                class="w-full bg-gray-700 text-white placeholder-gray-400 border-none rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
-              />
-            </div>
-            <div class="md:col-span-2 mt-4">
-              <button
-                type="submit"
-                class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-md text-lg transition-colors duration-300"
-              >
-                SEND MESSAGE
-              </button>
-            </div>
-          </form>
+          </div>
         </div>
       </section>
     </main>
